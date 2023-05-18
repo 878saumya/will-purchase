@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my page</title>
+<style>
+div {
+  background-color: yellow;
+  width: 500px;
+  border: 5px solid black;
+  position: absolute;
+  padding: 50px;
+  margin: 10px;
+  top: 20%;
+  left: 30%
+}
+.first{
+position: absolute;
+left:42%
+}
+body{
+background-color: lime
+}
+</style>
+
+</head>
+<body style="color:black">
+
+<h2 class="first">Kinbo ki kinto na??🤔😕</h2>
+<div >
+
+    {% if label %}
+        {% if label==1 %}
+               <h3 style="color:green">Kinbo🤑</h3>
+        {% else %}
+               <h3 style="color:red">Kinto na😥</h3>
+        {% endif %}
+    {% endif %}
+<form class="form" action="/predict" method="POST">
+  <label >Age bolo:</label><br>
+  <input type="number"  name="age" ><br>
+  <label >koto taka beton</label><br>
+  <input type="number"  name="salary"><br><br>
+  <input type="submit" value="Predict" style="color:red">
+</form>
+    </div>
+</body>
+</html>
